@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result table</title>
+ 
+</head>
+<body>
+
+
+    <!-- INTERENAL CSS -->
+    <style>
+        table, td, th, tr {
+            border: 1px solid black;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        table {
+            width: 90%;
+            height: 29vh;
+            margin: 0 auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        .marks {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            align-items: center;
+            margin-right: 10% ;
+        }
+
+        input[type="number"] {
+            width: 60px;
+        }
+        button{
+            width: 30%;
+            background-color: rgb(139, 245, 218);
+            padding: 10px 20px;
+            border:1px black solid;
+            margin-left: 30%;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgb(135, 236, 219);
+        }
+
+        button:hover{
+            box-shadow: 0 0 0 ;
+            color: black;
+            background-color: rgb(153, 252, 222);
+        }
+
+        input{
+            border: none;
+            padding: 8px 30px;
+        }
+        .tr1{
+            background-color: rgb(150, 209, 191);
+        }
+
+        
+
+        
+    </style>
+
+    <h1><b><u>Name of the student</u></b></h1>
+    <p>Enter marks for each subject:</p>
+
+    <table>
+        <tr class="tr1">
+            <th>s.no</th>
+            <th>Subject</th>
+            <th>Enter Obtained Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>English</td>
+            <td><input type="number" id="eng" min="0" max="100"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Physics</td>
+            <td><input type="number" id="phy" min="0" max="100"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Maths</td>
+            <td><input type="number" id="maths" min="0" max="100"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Computer</td>
+            <td><input type="number" id="com" min="0" max="100"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Urdu</td>
+            <td><input type="number" id="urdu" min="0" max="100"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Bio</td>
+            <td><input type="number" id="bio" min="0" max="100"></td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <button onclick="calculateResults()">Calculate</button>
+
+    <br>
+    <br>
+
+    <div class="marks">
+        <p><b>Total Obtained Marks: </b><span id="obtMarks"  style="font-size: 20px;">0</span></p>
+        <p><b>Percentage: </b><span id="percentage" style=" font-size: 20px;">0%</span></p>
+    </div>
+
+    <div class="div result">
+        
+    </div>
+
+
+    <script src="style.js"></script>
+</body>
+</html>
