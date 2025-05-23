@@ -9,6 +9,8 @@ function calculateResults() {
     let obtmarks = Eng + maths + phy + com + urdu + bio;
     let total = 600;
     let percn = (obtmarks * 100) / total;
+
+    const Bushi = "Diya😂"
     
     document.getElementById("obtMarks").innerText = obtmarks;
     document.getElementById("percentage").innerText = percn.toFixed(2) + "%";
